@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  font-family: 'Raleway', sans-serif;
+	background: url('./assets/img/blue.jpg') center center no-repeat;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {
+	font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+  align-content: stretch;
+  text-align: justify;
+}
