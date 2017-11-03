@@ -25,10 +25,6 @@ p {
 }
 
 section {
-  display: flex;
-  justify-content: center;
   height: 80vh;
-  align-items: center;
-  align-content: stretch;
   text-align: justify;
 }
