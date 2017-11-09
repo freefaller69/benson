@@ -7,7 +7,7 @@ body {
   color: #fff;
   text-shadow: 2px 2px #000;
   height: 100vh;
-  overflow: hidden;
+  width: 100vw;
 }
 
 body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {

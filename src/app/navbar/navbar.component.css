@@ -1,5 +1,3 @@
-
-
 nav ul {
   display: flex;
 }
@@ -18,6 +16,23 @@ nav a {
   text-decoration: none;
 }
 
-nav ul li:hover {
-  background-color: rgb(98, 219, 61);
+nav ul li,
+nav div a {
+  border-radius: 25px;
 }
+
+nav ul li:hover {
+  background-color: #899296;
+  box-shadow: 2px 2px 5px 0px #222;
+}
+
+nav div a:hover {
+  background-color: #899296;
+}
+
+.active {
+  background-color: #899296;
+  border-radius: 25px; 
+  box-shadow: 2px 2px 5px 0px #222;
+}
+
