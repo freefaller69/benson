@@ -1,15 +1,9 @@
 :host {
-  display: block;
+  /* display: block; */
 }
 
-.content {
-  width: 50%;
-}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 959px) {
 
-  .content {
-    width: 80%;
-  }
   
 }
