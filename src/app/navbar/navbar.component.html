@@ -1,4 +1,23 @@
-<nav class="navbar navbar-default">
+<nav fxLayout fxLayoutWrap fxLayoutAlign="space-between center" fxLayoutAlign.lt-md="center center">
+    <div fxFlexOrder.lt-md="2">
+      <a routerLink="/" class="navbar-brand">Michael W Benson</a>
+    </div>
+
+    <div id="navigation" fxLayoutAlign.sm="end center" fxFlexOrder.lt-md="1">
+      <ul>
+        <li routerLinkActive="active">
+          <a routerLink="/portfolio">PORTFOLIO</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/about">ABOUT</a>
+        </li>
+        <li routerLinkActive="active">
+          <a routerLink="/contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<!-- <nav class="navbar navbar-default">
   <div fxLayout fxLayoutWrap fxLayoutAlign="space-between center" fxLayoutAlign.sm="center center">
     <div class="navbar-header" fxFlexOrder.xs="2">
       <a routerLink="/" class="navbar-brand">Michael W Benson</a>
@@ -18,5 +37,5 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 

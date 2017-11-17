@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 	background: url('./assets/img/blue.jpg') center center no-repeat;
@@ -13,6 +17,7 @@ body {
 body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td {
 	font-size: 1em;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
@@ -28,3 +33,48 @@ p {
   height: 80vh;
   text-align: justify;
 } */
+
+
+/* GRID */
+app-navbar {
+  grid-area: nv;
+}
+
+app-about {
+  grid-area: sc;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+    "nv"
+    "sc";
+  margin: 2rem;
+}
+
+@media (max-width: 520px) {
+  .grid {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "nv nv nv"
+      "sc  sc  sc";
+  };
+}
+
+@media (min-width: 900px) {
+  .grid{
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+        grid-template-areas: 
+        "nv nv nv"
+        ".  sc . ";
+  }
+}
+
