@@ -1,0 +1,46 @@
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 1rem;
+}
+
+.navbar-toggler {
+  color: #fff;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li,
+nav div a {
+  border-radius: 15px;
+  margin: 0 .5rem;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+  background-color: hsla(198,6%,56%,.5);
+  box-shadow: 2px 2px 5px 0px #222;
+}
+
+.active {
+  background-color: hsla(198,6%,56%,.5);
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px #222;
+}
+
+@media screen and (max-width: 96rem) {
+  .navbar-brand {
+    padding: 2rem;
+  }
+}

@@ -9,7 +9,7 @@ import {
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css'],
+  styleUrls: ['./portfolio.component.scss'],
   animations: [routeFadeStateTrigger, routeSlideStateTrigger]
 })
 export class PortfolioComponent implements OnInit {
