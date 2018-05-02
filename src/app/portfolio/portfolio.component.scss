@@ -80,7 +80,6 @@
 
   &__name {
     height: 100%;
-    padding: 1.5rem;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   }
 
@@ -99,9 +98,17 @@
   height: 70vh;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 40rem));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 40rem));
   justify-content: center;
   align-content: flex-start;
   grid-column-gap: 2vw;
   grid-row-gap: 5vh;
+}
+
+.tech {
+
+  &__item {
+    font-size: 5rem;
+    padding: 1rem;
+  }
 }
