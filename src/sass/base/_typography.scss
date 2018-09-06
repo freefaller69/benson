@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+  // font-family: 'Open Sans', sans-serif;
+  // font-family: 'Lato', sans-serif;
+  // font-family: 'Source Sans Pro', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -0.4px;
+  line-height: 1.6;
+  color: var(--white);
+  text-shadow: 2px 2px #000;
+  box-sizing: border-box;
+  padding: 2.5rem;
+}
+
+body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td, a {
+	font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 3rem;
+}
+
+.lead {
+  font-size: 2.5rem;
+}
+
+ul {
+  list-style: none;
+}
+

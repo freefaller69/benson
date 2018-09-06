@@ -1,0 +1,44 @@
+.navbar,
+.navigation {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  height: 10vh;
+  padding: 0 2rem;
+
+  &__brand {
+    font-size: 2.5rem;
+    color: var(--white);
+    text-decoration: none;
+  }
+}
+
+.navigation {
+
+  &__item {
+    border-radius: 15px;
+    margin: 0 .5rem;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: hsla(198,6%,56%,.5);
+      box-shadow: 2px 2px 5px 0px #222;
+    }
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.active {
+  background-color: hsla(198,6%,56%,.5);
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px #222;
+}

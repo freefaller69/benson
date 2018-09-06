@@ -1,0 +1,38 @@
+.contact {
+
+  &__item{
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+}
+
+.icons {
+  color: currentColor;
+  margin-right: 1.5rem;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.phone,
+.email {
+  font-weight: bold;
+}
+
+.phone:after {
+  content: '360.474.5133';
+  color: currentColor;
+  font-weight: 400;
+  margin-left: 1.5rem;
+}
+
+
+.email:after {
+  content: 'benson.michael.w@gmail.com';
+  color: currentColor;
+  font-weight: 400;
+  margin-left: 1.5rem;
+}
