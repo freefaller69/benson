@@ -6,3 +6,21 @@
 .content {
   margin-top: 0;
 }
+
+.text-content {
+  opacity: 0;
+
+  &:nth-child(even) {
+    animation:
+      shimmy 2s ease forwards,
+      fadeIn 2s ease-in forwards,
+      focus 2s ease-in forwards;
+  }
+
+  &:nth-child(odd) {
+    animation:
+      shimmy 2s ease reverse,
+      fadeIn 2s ease-in forwards,
+      focus 2s ease-in forwards;
+  }
+}

@@ -9,36 +9,69 @@
 .navbar {
   height: 10vh;
   padding: 0 2rem;
+  width: 100%;
+  padding: 1rem 2.5rem;
+  animation:
+    fadeIn 2s ease-in forwards,
+    focus 2s ease-in forwards;
 
   &__brand {
     font-size: 2.5rem;
     color: var(--white);
     text-decoration: none;
+    height: 4.5rem;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    flex-direction: column;
+
   }
 }
 
 .navigation {
 
   &__item {
-    border-radius: 15px;
-    margin: 0 .5rem;
-    padding: 10px;
+    padding: 1rem;
     transition: all 0.3s ease-in-out;
 
-    &:hover {
-      background-color: hsla(198,6%,56%,.5);
-      box-shadow: 2px 2px 5px 0px #222;
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      background-color: currentColor;
+      box-shadow: 2px 2px rgba(0, 0, 0, .5);
+      height: 3px;
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: 0.3s;
     }
+
+    &:hover::before,
+    &:hover::after {
+      transform: scaleX(1);
+    }
+
   }
 
-  &__link {
+  &__link:link,
+  &__link:visited {
     color: #fff;
     text-decoration: none;
   }
 }
 
 .active {
-  background-color: hsla(198,6%,56%,.5);
-  border-radius: 15px;
-  box-shadow: 2px 2px 5px 0px #222;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    background-color: #fff;
+    box-shadow: 2px 2px rgba(0, 0, 0, .5);
+    height: 3px;
+    width: 100%;
+    transform: scaleX(1);
+  }
 }

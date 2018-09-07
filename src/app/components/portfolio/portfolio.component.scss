@@ -1,4 +1,21 @@
+.gallery {
+  margin-top: 4vh;
+  width: 100vw;
+  height: 86vh;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 40rem));
+  justify-content: center;
+  align-content: flex-start;
+  grid-column-gap: 2vw;
+  grid-row-gap: 5vh;
+}
+
 .card {
+  animation:
+    fadeIn 1.5s ease forwards,
+    focus 1.5s ease forwards;
+
   display: inline-block;
   perspective: 120rem;
   -moz-perspective: 120rem;
@@ -10,11 +27,7 @@
   border: none;
 
   &__side {
-    display: inline-block;
-
-    // color: #fff;
-    // font-size: 2rem;
-
+    // display: inline-block;
     height: 30rem;
     width: 100%;
     transition: all .8s ease;
@@ -47,11 +60,11 @@
     height: 23.5rem;
 
     &--1 {
-      background-image: url(../../../assets/img/newera-400.jpg);
+      background-image: url('https://res.cloudinary.com/djqkmwqyn/image/upload/v1536347374/newera-400.jpg');
     }
 
     &--2 {
-      background-image: url(../../../assets/img/chat-400.jpg);
+      background-image: url('https://res.cloudinary.com/djqkmwqyn/image/upload/v1536347374/chat-400.jpg');
     }
   }
 
@@ -66,7 +79,6 @@
 
   &__name,
   &__title {
-    // text-align: center;
     font-size: 2.2rem;
     font-weight: 300;
     color: var(--white);
@@ -74,6 +86,7 @@
 
   &__name {
     height: 100%;
+    padding-top: 1.5rem;
     background-image: var(--name-gradient);
   }
 
@@ -87,22 +100,13 @@
   }
 }
 
-.gallery {
-  width: 90vw;
-  height: 70vh;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 40rem));
-  justify-content: center;
-  align-content: flex-start;
-  grid-column-gap: 2vw;
-  grid-row-gap: 5vh;
-}
-
 .tech {
+  display: flex;
+  justify-content: center;
 
   &__item {
     font-size: 5rem;
     padding: 1rem;
+
   }
 }
