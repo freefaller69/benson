@@ -13,7 +13,6 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {
     this.letters = this.headerText.split('');
-    console.log(this.letters);
   }
 
 }
