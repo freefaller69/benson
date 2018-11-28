@@ -19,7 +19,7 @@
   display: inline-block;
   perspective: 120rem;
   -moz-perspective: 120rem;
-  background-color: transparent;
+  background-color: var(--black);
   text-shadow: none;
   position: relative;
   height: 30rem;
@@ -37,7 +37,7 @@
     backface-visibility: hidden;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(#fff, .15);
+    box-shadow: 0 1.5rem 4rem rgba(var(--white), .15);
 
     &--back {
       transform: rotateY(180deg);
