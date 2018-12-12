@@ -11,8 +11,8 @@ body {
   position: relative;
   // padding: 0 2.5rem;
   animation:
-    fadeIn 2s ease-in forwards,
-    focus 2s ease-in forwards;
+    fadeIn 1.7s ease-in forwards,
+    focus 1.7s ease-in forwards;
   animation-duration: 1s;
 
   &::before {
