@@ -23,9 +23,3 @@ phases:
   post -build:
     commands:
       - echo Deployment completed on `date`
-
-artifacts:
-  files:
-    - "**/*"
-  discard-paths: no
-  base-directory: dist/benson
