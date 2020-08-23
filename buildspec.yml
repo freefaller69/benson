@@ -20,6 +20,6 @@ phases:
       - ng build --prod
       # - echo Invalidating Cloudfront cache
       # - cloudfront create-invalidation --distribution-id XXXXXXX --paths "/*"
-  post -build:
+  post-build:
     commands:
       - echo Deployment completed on `date`
