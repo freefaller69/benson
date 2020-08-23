@@ -12,15 +12,15 @@
 
   &:nth-child(even) {
     animation:
-      shimmy 2s ease forwards,
-      fadeIn 2s ease-in forwards,
-      focus 2s ease-in forwards;
+      shimmy 1.5s ease forwards,
+      fadeIn 1.5s ease-in forwards,
+      focus 1.5s ease-in forwards;
   }
 
   &:nth-child(odd) {
     animation:
-      shimmy 2s ease reverse,
-      fadeIn 2s ease-in forwards,
-      focus 2s ease-in forwards;
+      shimmy 1.5s ease reverse,
+      fadeIn 1.5s ease-in forwards,
+      focus 1.5s ease-in forwards;
   }
 }

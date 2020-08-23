@@ -2,9 +2,9 @@
 
   &__header {
     animation:
-      shimmy 2s ease forwards,
-      fadeIn 2s ease-in forwards,
-      focus 2s ease-in forwards;
+      shimmy 1.5s ease forwards,
+      fadeIn 1.5s ease-in forwards,
+      focus 1.5s ease-in forwards;
   }
 
   &__item{
@@ -12,19 +12,19 @@
     margin: 3rem 0;
     opacity: 0;
     animation:
-      fadeIn 2s ease-in forwards,
-      focus 2s ease-in forwards;
+      fadeIn 1.5s ease-in forwards,
+      focus 1.5s ease-in forwards;
 
     &:nth-child(2) {
-      animation-delay: 0.5s
+      animation-delay: 0.33s
     }
 
     &:nth-child(3) {
-      animation-delay: 1.0s
+      animation-delay: .67s
     }
 
     &:nth-child(4) {
-      animation-delay: 1.5s
+      animation-delay: 1s
     }
   }
 }
