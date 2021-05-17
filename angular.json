@@ -41,7 +41,7 @@
             "production": {
               "budgets": [
                 {
-                  "type": "anyComponentStyle",
+                  "type": "any",
                   "maximumWarning": "6kb"
                 }
               ],
